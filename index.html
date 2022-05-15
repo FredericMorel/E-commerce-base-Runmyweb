@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body id="App">
+    <h2>Ajouter un client</h2>
+    <form id="formclient">
+        <label for=""></label>
+        <input type="text" name="name" value="" placeholder="nom du client">
+        <input type="text" name="city" value="" placeholder="votre ville" spellcheck="true">
+        <input type="tel" name="tel" value="" placeholder="numéro de téléphone">
+        <input type="email" name="email" value="" placeholder="email client">
+        <label for="age">age client</label>
+        <br>
+        <input type="number" id="age" name="age">
+
+        <input type="submit" value="envoyer">
+
+    </form>
+<h2>Ajouter une commande</h2>
+    <form  id="formCommande">
+        
+        <input type="text" name="name" value="" placeholder="nom du client">
+        <select name="product" id="product">
+            <option value="">Choisir un produit</option>
+            <option value="1">produit 1</option>
+            <option value="2">Produit 2</option>
+            <option value="3"> Produit 3</option>
+        </select>
+        <input type="submit" value="envoyer">
+    </form>
+
+<div id="listCard"></div>
+</body>
+<!-- TABLE -->
+<script src="./data/produitTable.js"></script>
+<script src="./data/clientsTable.js"></script>
+<script src="./data/commandeTable.js"></script>
+<!-- LOGIC -->
+<script src="./util/saveLocalData.js"></script>
+<script src="./util/generateCardProduct.js"></script>
+<script src="./classes/Commande.js"></script>
+<script src="./classes/Client.js"></script>
+<script src="./util/generateTable.js"></script>
+<script src="./util/generalFunction.js"></script>
+<script src="./index.js"></script>
+
+</html>
